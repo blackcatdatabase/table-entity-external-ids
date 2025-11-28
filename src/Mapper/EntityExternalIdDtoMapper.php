@@ -17,7 +17,7 @@ use BlackCat\Database\Support\DtoHydrator;
 final class EntityExternalIdDtoMapper
 {
     /** @var array<string,string> Column -> DTO property */
-    private const COL_TO_PROP = [ 'entity_table' => 'entityTable', 'entity_pk' => 'entityPk', 'external_id' => 'externalId', 'created_at' => 'createdAt' ];
+    private const COL_TO_PROP = [ 'id' => 'id', 'entity_table' => 'entityTable', 'entity_pk' => 'entityPk', 'source' => 'source', 'external_id' => 'externalId', 'created_at' => 'createdAt' ];
 
     /** @var string[] */
     private const BOOL_COLS   = [];
