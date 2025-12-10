@@ -6,11 +6,11 @@ Links between local entities and identifiers in external systems.
 | Column | Type | Null | Default | Description |
 | --- | --- | --- | --- | --- |
 | created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
+| id | BIGINT | NO |  | Surrogate primary key. |
+| source | VARCHAR(100) | NO |  | External system identifier. |
 | entity_pk | VARCHAR(64) | NO |  | Primary key value of the local record. |
 | entity_table | VARCHAR(64) | NO |  | Local table name. |
 | external_id | VARCHAR(200) | NO |  | External ID for the record. |
-| id | BIGINT | NO |  | Surrogate primary key. |
-| source | VARCHAR(100) | NO |  | External system identifier. |
 
 ## Engine Details
 
