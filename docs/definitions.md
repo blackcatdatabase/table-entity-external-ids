@@ -5,12 +5,12 @@ Links between local entities and identifiers in external systems.
 ## Columns
 | Column | Type | Null | Default | Description |
 | --- | --- | --- | --- | --- |
-| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
-| entity_pk | VARCHAR(64) | NO |  | Primary key value of the local record. |
-| entity_table | VARCHAR(64) | NO |  | Local table name. |
-| external_id | VARCHAR(200) | NO |  | External ID for the record. |
 | id | BIGINT | NO |  | Surrogate primary key. |
+| entity_table | VARCHAR(64) | NO |  | Local table name. |
+| entity_pk | VARCHAR(64) | NO |  | Primary key value of the local record. |
 | source | VARCHAR(100) | NO |  | External system identifier. |
+| external_id | VARCHAR(200) | NO |  | External ID for the record. |
+| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
 
 ## Engine Details
 
@@ -47,5 +47,5 @@ Indexes:
 ## Views
 | View | Engine | Flags | File |
 | --- | --- | --- | --- |
-| vw_entity_external_ids | mysql | algorithm=MERGE, security=INVOKER | [schema\040_views.mysql.sql](schema\040_views.mysql.sql) |
-| vw_entity_external_ids | postgres |  | [schema\040_views.postgres.sql](schema\040_views.postgres.sql) |
+| vw_entity_external_ids | mysql | algorithm=MERGE, security=INVOKER | [../schema/040_views.mysql.sql](../schema/040_views.mysql.sql) |
+| vw_entity_external_ids | postgres |  | [../schema/040_views.postgres.sql](../schema/040_views.postgres.sql) |
