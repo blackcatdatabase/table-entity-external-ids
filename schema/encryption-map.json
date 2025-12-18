@@ -1,0 +1,26 @@
+{
+  "tables": {
+    "entity_external_ids": {
+      "columns": {
+        "created_at": {
+          "strategy": "passthrough"
+        },
+        "entity_pk": {
+          "strategy": "passthrough"
+        },
+        "entity_table": {
+          "strategy": "passthrough"
+        },
+        "external_id": {
+          "strategy": "passthrough"
+        },
+        "id": {
+          "strategy": "passthrough"
+        },
+        "source": {
+          "strategy": "passthrough"
+        }
+      }
+    }
+  }
+}

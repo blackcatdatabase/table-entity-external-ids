@@ -3,14 +3,14 @@
 Links between local entities and identifiers in external systems.
 
 ## Columns
-| Column | Type | Null | Default | Description |
-| --- | --- | --- | --- | --- |
-| id | BIGINT | NO |  | Surrogate primary key. |
-| entity_table | VARCHAR(64) | NO |  | Local table name. |
-| entity_pk | VARCHAR(64) | NO |  | Primary key value of the local record. |
-| source | VARCHAR(100) | NO |  | External system identifier. |
-| external_id | VARCHAR(200) | NO |  | External ID for the record. |
-| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
+| Column | Type | Null | Default | Description | Crypto |
+| --- | --- | --- | --- | --- | --- |
+| id | BIGINT | NO |  | Surrogate primary key. |  |
+| entity_table | VARCHAR(64) | NO |  | Local table name. |  |
+| entity_pk | mysql: VARCHAR(64) | NO |  | Primary key value of the local record. |  |
+| source | mysql: VARCHAR(100) | NO |  | External system identifier. |  |
+| external_id | mysql: VARCHAR(200) | NO |  | External ID for the record. |  |
+| created_at | mysql: DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
 
 ## Engine Details
 
