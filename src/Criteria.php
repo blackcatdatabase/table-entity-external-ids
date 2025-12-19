@@ -41,11 +41,11 @@ final class Criteria extends BaseCriteria
         return [ 'entity_table', 'entity_pk', 'source', 'external_id' ];
     }
 
-/** Columns allowed in ORDER BY (falls back to filterable() when empty). */
-protected function sortable(): array
-{
-    return [ 'id', 'entity_table', 'entity_pk', 'source', 'external_id', 'created_at' ];
-}
+    /** Columns allowed in ORDER BY (falls back to filterable() when empty). */
+    protected function sortable(): array
+    {
+        return [ 'id', 'entity_table', 'entity_pk', 'source', 'external_id', 'created_at' ];
+    }
 
     /**
      * Whitelist of joinable entities (for safe ->join() usage):
